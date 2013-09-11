@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XD7-5G-erT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XD7-5G-erT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -26,7 +26,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView contentMode="scaleToFill" image="profile_photo.jpg" id="nMk-9g-Dzh">
+                                                <imageView contentMode="scaleAspectFit" image="profile_photo.jpg" id="nMk-9g-Dzh">
                                                     <rect key="frame" x="14" y="20" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -91,7 +91,7 @@
                         <outlet property="nameField" destination="2h0-OV-o3S" id="dOv-fH-aQh"/>
                         <outlet property="passwordField" destination="auL-g7-g83" id="oPk-a4-rld"/>
                         <outlet property="phoneField" destination="xf5-Eb-337" id="dha-nq-nGo"/>
-                        <outlet property="pic" destination="nMk-9g-Dzh" id="8hc-Yk-ZEG"/>
+                        <outlet property="pic" destination="nMk-9g-Dzh" id="Xhz-yh-3zh"/>
                         <outlet property="usernameField" destination="Wye-1P-L7g" id="H7Y-oU-rxc"/>
                     </connections>
                 </tableViewController>
@@ -217,17 +217,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="qjE-lZ-QT0" id="LWT-3Y-aVD"/>
-                        <outlet property="imageView" destination="nMk-9g-Dzh" id="xva-EA-wuu"/>
                         <outlet property="nameField" destination="2h0-OV-o3S" id="Hh3-QR-ZOu"/>
                         <outlet property="passwordField" destination="auL-g7-g83" id="KPp-Tw-e0W"/>
                         <outlet property="phoneField" destination="xf5-Eb-337" id="Hyh-Qe-8Vw"/>
-                        <outlet property="pic" destination="nMk-9g-Dzh" id="bws-zU-hv9"/>
                         <outlet property="usernameField" destination="Wye-1P-L7g" id="vBu-xc-vsU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANL-5O-yEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="104"/>
+            <point key="canvasLocation" x="1683" y="109"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="xQb-f1-OUF">
@@ -252,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0P-OP-tgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="882"/>
+            <point key="canvasLocation" x="708" y="823"/>
         </scene>
         <!--Profile-->
         <scene sceneID="emu-57-FKF">

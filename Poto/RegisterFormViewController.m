@@ -131,8 +131,8 @@
     [self.registerClass setName:[_nameField text]];
     [self.registerClass setEmail:[_emailField text]];
     [self.registerClass setPhone:[_phoneField text]];
-    
-    /*if (_pic.image){
+    /*
+    if (_pic.image){
         float resize = 74.0;
         float actualWidth = _pic.image.size.width;
         float actualHeight = _pic.image.size.height;
@@ -154,8 +154,8 @@
         
         NSData *smaalImageData = UIImageJPEGRepresentation(smallImage, 1.0);
         [self.registerClass setPic:smaalImageData];
-    }*/
-    
+    }
+    */
     // commit
     NSError *error;
     if(![_managedObjectContext save:&error])

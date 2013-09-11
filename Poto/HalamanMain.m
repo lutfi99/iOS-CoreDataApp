@@ -9,6 +9,7 @@
 #import "HalamanMain.h"
 #import "CoreDataHelper.h"
 #import "RegisterFormViewController.h"
+#import "Profile.h"
 
 @interface HalamanMain ()
 
@@ -96,7 +97,17 @@
         UITextField *username = [alertView textFieldAtIndex:0];
         UITextField *password = [alertView textFieldAtIndex:1];
         
-        NSLog(@"Username: %@\nPassword: %@", username.text, password.text);
+        NSLog(@"Username: %@\nPassword: %@", [username text], [password text]);
+        
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(username == %@ && password == %@)", [username text], [password text]];
+        
+        if ([CoreDataHelper countForEntity:@"Register" withPredicate:pred andContext:managedObjectContext] > 0){
+            NSLog(@"LOGIN BERHASIL");
+            Profile *profile = [[Profile alloc] init];
+            [self.navigationController pushViewController:profile animated:YES];
+        }else{
+            NSLog(@"GAGAL");
+        }
         
         /*username.tag = 1;
         password.tag = 2;
